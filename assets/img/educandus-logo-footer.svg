@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1029 1029" role="img" aria-label="Educandus">
+  <defs>
+    <filter id="white-logo" color-interpolation-filters="sRGB">
+      <feColorMatrix
+        in="SourceGraphic"
+        result="alphaMask"
+        type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+               -1 -1 -1 0 2.86" />
+      <feFlood flood-color="#ffffff" result="whiteFill" />
+      <feComposite in="whiteFill" in2="alphaMask" operator="in" />
+    </filter>
+  </defs>
+  <image href="educandus-logo.jpg" width="1029" height="1029" filter="url(#white-logo)" />
+</svg>
